@@ -17,6 +17,7 @@ export function PlatformProvider({ children }: { children: ReactNode }) {
   async function refresh() {
     try {
       const data = await getPlatform()
+      if (!data.platform?.plans?.length) throw new Error('Invalid platform payload')
       setSettings(data.platform)
     } catch {
       setSettings(defaultPlatform())

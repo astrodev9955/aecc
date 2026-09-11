@@ -27,7 +27,16 @@ async function request<T>(path: string, init: RequestInit = {}): Promise<T> {
 
   if (res.status === 204) return undefined as T
 
-  const data = (await res.json().catch(() => ({}))) as { error?: string }
+  const text = await res.text()
+  let data: { error?: string } = {}
+  try {
+    data = text ? (JSON.parse(text) as { error?: string }) : {}
+  } catch {
+    throw new ApiError(
+      res.status,
+      'The API is not running on this host. Circular needs the Express server and MongoDB — Vercel is only serving the website.',
+    )
+  }
   if (!res.ok) {
     throw new ApiError(res.status, data.error || `Request failed (${res.status})`)
   }

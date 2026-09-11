@@ -22,6 +22,7 @@
     "jsonwebtoken": "^9.0.2",
     "mongodb": "^7.6.0",
     "multer": "^2.3.0",
+    "node-fetch": "^3.3.2",
     "openai": "^7.13.0",
     "react": "^19.2.8",
     "react-dom": "^19.2.8",
