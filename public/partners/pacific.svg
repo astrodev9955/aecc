@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 72" fill="none">
+  <rect width="280" height="72" rx="6" fill="#1a1714"/>
+  <circle cx="36" cy="36" r="16" stroke="#C45C26" stroke-width="2"/>
+  <circle cx="36" cy="36" r="8" stroke="#E8C9A8" stroke-width="1.4"/>
+  <path d="M36 20 V28 M36 44 V52 M20 36 H28 M44 36 H52" stroke="#E8C9A8" stroke-width="1.2"/>
+  <text x="64" y="34" fill="#F4EFE4" font-family="Georgia, serif" font-size="18" font-weight="700">Pacific Copper</text>
+  <text x="64" y="52" fill="#E8C9A8" font-family="Arial, sans-serif" font-size="10" letter-spacing="2">MEP METALS</text>
+</svg>

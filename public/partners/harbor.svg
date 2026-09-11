@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 72" fill="none">
+  <rect width="280" height="72" rx="6" fill="#1a1714"/>
+  <path d="M18 50 L36 16 L54 50 Z" stroke="#E8C9A8" stroke-width="1.6"/>
+  <path d="M36 22 V44" stroke="#C45C26" stroke-width="1.4"/>
+  <text x="68" y="34" fill="#F4EFE4" font-family="Georgia, serif" font-size="18" font-weight="700">Harbor + Field</text>
+  <text x="68" y="52" fill="#E8C9A8" font-family="Arial, sans-serif" font-size="10" letter-spacing="2">ARCHITECTURE</text>
+</svg>

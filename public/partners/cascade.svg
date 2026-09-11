@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 72" fill="none">
+  <rect width="280" height="72" rx="6" fill="#1a1714"/>
+  <rect x="18" y="22" width="8" height="30" fill="#E8C9A8"/>
+  <rect x="32" y="16" width="10" height="36" fill="#C45C26"/>
+  <rect x="48" y="26" width="7" height="26" fill="#E8C9A8"/>
+  <text x="72" y="34" fill="#F4EFE4" font-family="Georgia, serif" font-size="18" font-weight="700">Cascade Steel</text>
+  <text x="72" y="52" fill="#E8C9A8" font-family="Arial, sans-serif" font-size="10" letter-spacing="2">STRUCTURAL SUPPLY</text>
+</svg>
