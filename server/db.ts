@@ -112,10 +112,20 @@ interface Collections {
   settings: Collection<SettingsDoc>
 }
 
-const url = process.env.DATABASE_URL
-if (!url) throw new Error('DATABASE_URL is not set')
+function databaseUrl(): string {
+  let raw = (process.env.DATABASE_URL || process.env.MONGODB_URI || '').trim()
+  if (!raw) {
+    throw new Error(
+      'DATABASE_URL is not set. In Railway → Variables, add DATABASE_URL (the mongodb+srv:// line from Atlas). Then redeploy.',
+    )
+  }
+  if (!/mongodb(\+srv)?:\/\/[^/?]+\/[^?]/.test(raw)) {
+    raw = raw.includes('?') ? raw.replace('?', '/circular?') : `${raw.replace(/\/$/, '')}/circular`
+  }
+  return raw
+}
 
-const client = new MongoClient(url)
+const client = new MongoClient(databaseUrl())
 let db: Db | null = null
 
 export async function connectDb(): Promise<Db> {
